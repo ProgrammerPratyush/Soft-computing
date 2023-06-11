@@ -1,0 +1,91 @@
+# import required libraries
+import csv
+import random
+import numpy as np
+
+# load dataset from CSV file
+def loadDataset(filename):
+    # TODO: read data from CSV file and return as numpy array
+    pass
+
+# calculate Euclidean distance between two data points
+def euclideanDistance(point1, point2):
+    # TODO: calculate Euclidean distance between two data points
+    pass
+
+# get k nearest neighbors for a given test instance
+def getNeighbors(trainingSet, testInstance, k):
+    # TODO: calculate distances between testInstance and all instances in trainingSet
+    # TODO: sort distances in ascending order and return the first k neighbors
+    pass
+
+# get the majority response from a list of neighbors
+def getResponse(neighbors):
+    # TODO: get the majority response from a list of neighbors
+    pass
+
+# calculate the accuracy of predictions
+def getAccuracy(predictions, actualLabels):
+    # TODO: calculate the accuracy of predictions by comparing with actualLabels
+    pass
+
+# calculate fitness value for a chromosome
+def fitnessValue(chromosome, trainingSet, testSet, k):
+    # TODO: select features based on the chromosome
+    # TODO: train KNN model on trainingSet using selected features
+    # TODO: make predictions on testSet using the trained KNN model
+    # TODO: calculate accuracy of predictions
+    # TODO: return fitness value
+    pass
+
+# generate initial population of chromosomes
+def generatePopulation(populationSize, chromosomeLength):
+    # TODO: generate population of given size and chromosome length
+    pass
+
+# select elite child from population
+def eliteChild(population, k):
+    # TODO: select the best chromosome from the population based on fitness value
+    # TODO: return the selected chromosome
+    pass
+
+# select parents for crossover using tournament selection
+def tournamentSelection(population, k):
+    # TODO: select k random chromosomes from the population
+    # TODO: select the best chromosome based on fitness value
+    # TODO: return the selected chromosome
+    pass
+
+# get mutated chromosome
+def getMutation(chromosome, mutationProbability):
+    # TODO: randomly flip bits in the chromosome based on mutation probability
+    # TODO: return the mutated chromosome
+    pass
+
+# perform XOR crossover on two parent chromosomes
+def toXor(parent1, parent2):
+    # TODO: perform XOR crossover on parent1 and parent2
+    # TODO: return the child chromosome
+    pass
+
+# get offspring chromosomes using crossover and mutation
+def getOffspring(parent1, parent2, mutationProbability):
+    # TODO: perform crossover on parent1 and parent2 to generate offspring chromosome
+    # TODO: mutate the offspring chromosome based on mutation probability
+    # TODO: return the offspring chromosome
+    pass
+
+# generate new generation of chromosomes
+def getGeneration(population, elitism, tournamentSize, mutationProbability, trainingSet, testSet, k):
+    # TODO: select elite child from population
+    # TODO: generate remaining offspring using crossover and mutation
+    # TODO: return new generation of chromosomes
+    pass
+
+# main function to run feature selection using KNN and GA
+def main():
+    # TODO: set random seed for reproducibility
+    # TODO: load dataset from CSV file
+    # TODO: split dataset into training and test sets
+    # TODO: set hyperparameters for GA
+    # TODO: generate
